@@ -1,0 +1,142 @@
+📚 Diário de Estudos SQL - Revisão de SELECT, INSERT, UPDATE, DELETE e TRUNCATE
+
+🎯 Objetivo
+
+Realizar uma revisão prática dos principais comandos SQL estudados até o momento, reforçando a sintaxe e identificando pontos que ainda precisam de atenção.
+
+⸻
+
+📝 Primeira Tentativa
+
+Durante a resolução dos exercícios, consegui aplicar corretamente alguns conceitos fundamentais:
+
+Acertos
+
+* SELECT com retorno de todos os registros.
+* Filtro utilizando WHERE.
+* Busca de registros por ano.
+* Operador de diferença (<>).
+* DELETE utilizando condição.
+* Entendimento básico da diferença entre DELETE e TRUNCATE.
+
+Dificuldades Encontradas
+
+Identifiquei erros principalmente relacionados à sintaxe dos comandos:
+
+* Seleção de colunas específicas.
+* Utilização correta do WHERE em UPDATE.
+* Utilização correta do WHERE em DELETE.
+* Estrutura completa do INSERT INTO.
+* Diferença entre selecionar colunas e filtrar registros.
+
+Pontuação inicial:
+
+4,5 / 12 exercícios corretos
+
+⸻
+
+🔍 Correção e Aprendizado
+
+Após revisar os exercícios, compreendi melhor alguns padrões importantes da linguagem SQL.
+
+Selecionar colunas específicas
+
+Antes:
+
+SELECT * FROM cursos WHERE nomes;
+
+Correto:
+
+SELECT nome FROM cursos;
+
+⸻
+
+Atualizar registros específicos
+
+Antes:
+
+UPDATE cursos
+SET carga = 50;
+WHERE Python;
+
+Correto:
+
+UPDATE cursos
+SET carga = 50
+WHERE nome = 'Python';
+
+⸻
+
+Excluir registros específicos
+
+Antes:
+
+DELETE cursos
+WHERE SQL Server;
+
+Correto:
+
+DELETE FROM cursos
+WHERE nome = 'SQL Server';
+
+⸻
+
+📖 Conceitos Reforçados
+
+SELECT
+
+Utilizado para consultar dados de uma tabela.
+
+SELECT * FROM cursos;
+
+⸻
+
+INSERT
+
+Utilizado para inserir novos registros.
+
+INSERT INTO cursos
+VALUES (6, 'Excel', 25, 18, 2023);
+
+⸻
+
+UPDATE
+
+Utilizado para alterar registros existentes.
+
+UPDATE cursos
+SET ano = 2025
+WHERE nome = 'HTML5';
+
+⸻
+
+DELETE
+
+Utilizado para remover registros específicos.
+
+DELETE FROM cursos
+WHERE ano = 2018;
+
+⸻
+
+TRUNCATE
+
+Utilizado para remover todos os registros da tabela de forma rápida.
+
+TRUNCATE TABLE cursos;
+
+⸻
+
+🚀 Evolução Percebida
+
+Comparando meus estudos anteriores com esta revisão, percebo que:
+
+* Já consigo interpretar consultas SQL básicas.
+* Entendo a finalidade dos comandos SELECT, INSERT, UPDATE, DELETE e TRUNCATE.
+* Consigo utilizar filtros com WHERE.
+* Comecei a identificar sozinho erros de sintaxe.
+* Estou desenvolvendo raciocínio para manipulação de dados em tabelas.
+
+💡 Reflexão
+
+Esta atividade mostrou que entender a lógica dos comandos é diferente de dominar completamente sua sintaxe. Apesar dos erros iniciais, a correção permitiu consolidar conceitos importantes e reforçar a prática, tornando o aprendizado mais consistente.
