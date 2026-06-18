@@ -95,3 +95,20 @@ use EstudosDados;
 
 select nomeAluno, idade, livroFavorito from Alunos
 join Livros on Alunos.livroFavorito = Livros.idLivro;
+
+-- Continuação do exercício 18-06
+
+ select nomeAluno,nomeCurso,livroFavorito 
+ from Alunos
+ join Curso
+ on Alunos.cursoPreferido = Curso.idCursos
+ join Livros
+ on Alunos.livroFavorito = Livros.id;
+
+select nomeAluno,nomeCurso,cargaHoraria,titulo,categoria
+from Alunos
+join Curso
+on Alunos.cursoPreferido = Curso.idCursos
+join Livros 
+on Alunos.livroFavorito = Livros.id
+order by nomeAluno;
