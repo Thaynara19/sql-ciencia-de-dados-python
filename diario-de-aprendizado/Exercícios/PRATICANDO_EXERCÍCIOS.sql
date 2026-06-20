@@ -1,4 +1,6 @@
-create table Secretaria(
+
+
+ create table Secretaria(
      idSecretaria int primary key identity (1,1),
      nomeFuncionario varchar(50),
      telefone varchar(15),
@@ -15,27 +17,30 @@ create table Secretaria(
        idMatriculas int primary key identity(1,1),
        dataMatricula date,
        statusMatricula varchar(100)
-  );alter table Matriculas 
+
+   );
+  
+  alter table Matriculas 
   add idAlunos int;
 
- alter table Matriculas
- add idCursos int;
+  alter table Matriculas
+  add idCursos int;
 
- alter table Matriculas 
- add idSecretaria int;
+  alter table Matriculas 
+  add idSecretaria int;
 
- alter table Matriculas 
- add FOREIGN KEY (idAlunos)
- references Alunos(idAlunos) ;
+  alter table Matriculas 
+  add FOREIGN KEY (idAlunos)
+  references Alunos(idAlunos) ;
 
- alter table Matriculas 
- add foreign key (idCursos)
- references Curso(idCursos) ;
+  alter table Matriculas 
+  add foreign key (idCursos)
+  references Curso(idCursos) ;
 
- alter table Matriculas 
- add foreign key (idSecretaria)
- references Secretaria(idSecretaria) ;
-
+  alter table Matriculas 
+  add foreign key (idSecretaria)
+  references Secretaria(idSecretaria) ;
+ 
     insert into Matriculas (dataMatricula,statusMatricula,idAlunos,idCursos,idSecretaria) values 
    ('2026-06-18', 'Ativa', 3, 1, 1),
    ('2026-06-18', 'Ativa', 5, 2, 1),
@@ -64,6 +69,5 @@ create table Secretaria(
   on Matriculas.idCursos = Curso.idCursos
   join Secretaria 
   on Matriculas.idSecretaria = Secretaria.idSecretaria;
-
 
 
