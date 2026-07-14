@@ -199,4 +199,8 @@ antes de avançar para:
 
 - GROUP BY
 - HAVING
+<<<<<<< HEAD
 - JOINs
+=======
+- JOINs
+>>>>>>> 69b9f74 (Adicionando o Desafio 05 - IN e IS NULL)
