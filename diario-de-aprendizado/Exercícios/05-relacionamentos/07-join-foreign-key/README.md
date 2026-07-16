@@ -65,5 +65,4 @@ praticar o relacionamento entre tabelas utilizando chave estrangeira (foreign ke
 ---
 
 ## conclusão
-
 este desafio foi o primeiro contato com relacionamentos entre tabelas utilizando foreign key e consultas com join. após algumas correções consegui entender melhor como as tabelas se relacionam e como utilizar aliases corretamente. também tive meu primeiro contato com group by, count e avg, assuntos que serão aprofundados nos próximos desafios.

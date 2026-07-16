@@ -1,27 +1,27 @@
-Questão 01 : 
+-- Questão 01 : 
   select * from Alunos;
 
-Questão 2 : 
+-- Questão 2 : 
    select * from Alunos 
    order by nome asc; 
 
-Questão 3 : 
+-- Questão 3 : 
   select * from Alunos 
   order by idade desc;
 
-Questão 4 : 
+-- Questão 4 : 
   select * from Professores 
   order by nome;
 
-Questão 5 : 
+-- Questão 5 : 
   select * from Professores 
   order by disciplina;
 
-Questão 6 : 
+-- Questão 6 : 
   select * from Turmas 
   order by nomeTurma;
 
-Questão 7 : 
+-- Questão 7 : 
 
 -- Aqui a um erro,o certo seria : 
 -- select * from Alunos 
@@ -33,10 +33,10 @@ Questão 7 :
   order by nome asc
   where cidade = 'Goiânia'; 
 
-Questão 8 :
+-- Questão 8 :
   select count(nome) from Professores;
 
-Questão 9 :
+-- Questão 9 :
 
 -- Aqui também há um erro, o correto seria : 
 -- update Professores
@@ -47,6 +47,6 @@ Questão 9 :
   set disciplina = 'Ciências'
   where nome = 'Maria';
 
-Questão 10 :
+-- Questão 10 :
   select * from Professores 
   order by nome; 
