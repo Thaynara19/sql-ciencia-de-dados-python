@@ -1,5 +1,5 @@
 # desafio 08 - group by e funções de agregação
-DATA
+# DATA : 17/07/2026
 
 ## objetivo
 
